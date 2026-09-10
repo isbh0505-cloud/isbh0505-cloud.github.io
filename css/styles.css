@@ -1,0 +1,1394 @@
+/* =========================
+   GENERAL
+========================= */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  width: 100%;
+  overflow-y: scroll;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  font-family: "Montserrat", sans-serif;
+
+  color: #ffffff;
+
+  line-height: 1.8;
+
+  background:
+    url("../img/hot-exotic-cocktails-wallpaper-preview.jpg")
+    no-repeat
+    center
+    center
+    fixed;
+
+  background-size: cover;
+
+  -webkit-font-smoothing:
+    antialiased;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+header {
+  width: 100%;
+
+  padding: 20px 5%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  background-color:
+    rgba(10, 30, 50, 0.92);
+
+  backdrop-filter:
+    blur(10px);
+
+  border-bottom:
+    1px solid
+    rgba(135, 206, 235, 0.4);
+
+  position: relative;
+}
+
+
+/* =========================
+   BARRA DE ESTADO
+========================= */
+
+#barra-estado {
+  position: fixed;
+
+  top: 85px;
+  right: 20px;
+
+  z-index: 1000;
+
+  padding: 8px 15px;
+
+  background-color:
+    rgba(10, 30, 50, 0.95);
+
+  border-radius: 6px;
+
+  font-size: 0.8rem;
+
+  backdrop-filter:
+    blur(8px);
+}
+
+#barra-estado:empty {
+  display: none;
+}
+
+
+/* =========================
+   TÍTULO PRINCIPAL
+========================= */
+
+h1 {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+
+  text-transform: uppercase;
+
+  text-align: left;
+
+  white-space: nowrap;
+}
+
+
+/* =========================
+   NAVEGACIÓN
+========================= */
+
+nav {
+  display: flex;
+
+  justify-content: flex-end;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  align-items: center;
+
+  gap: 30px;
+
+  list-style: none;
+}
+
+nav ul li a {
+  color: #ffffff;
+
+  text-decoration: none;
+
+  font-size: 0.75rem;
+  font-weight: 600;
+
+  text-transform: uppercase;
+
+  letter-spacing: 2.5px;
+
+  white-space: nowrap;
+
+  transition:
+    color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #87CEEB;
+}
+
+
+/* =========================
+   CONTENIDO
+========================= */
+
+main {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 40px auto 0 auto;
+
+  padding: 0 5%;
+
+  flex: 1;
+}
+
+section {
+  width: 100%;
+
+  margin-bottom: 40px;
+
+  padding: 0;
+
+  background-color:
+    transparent;
+}
+
+
+/* =========================
+   TÍTULOS
+========================= */
+
+h2 {
+  margin-bottom: 30px;
+
+  color: #0a1e32;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 2.6rem;
+  font-weight: 700;
+
+  letter-spacing: 1px;
+
+  text-align: center;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+  padding: 55px 0 80px 0;
+
+  text-align: center;
+
+  border-bottom:
+    1px solid
+    rgba(135, 206, 235, 0.3);
+}
+
+.hero h2 {
+  color: #0a1e32;
+
+  font-size: 4.5rem;
+
+  font-weight: 700;
+
+  line-height: 1.1;
+
+  margin-bottom: 25px;
+}
+
+.hero p {
+  max-width: 650px;
+
+  margin: 0 auto;
+
+  color: #ffffff;
+
+  font-size: 1.25rem;
+
+  font-weight: 700;
+}
+
+
+/* =========================
+   BOTONES GENERALES
+========================= */
+
+.btn-cta {
+  display: inline-block;
+
+  margin-top: 25px;
+
+  padding: 13px 28px;
+
+  background-color:
+    rgba(10, 30, 50, 0.85);
+
+  color: #ffffff;
+
+  border:
+    1px solid #87CEEB;
+
+  text-decoration: none;
+
+  font-family: inherit;
+
+  font-size: 0.75rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+
+  text-transform: uppercase;
+
+  cursor: pointer;
+
+  backdrop-filter:
+    blur(4px);
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-cta:hover {
+  background-color:
+    #87CEEB;
+
+  color: #0a1e32;
+}
+
+
+/* =========================
+   TARJETAS
+========================= */
+
+.tarjeta {
+  padding: 25px;
+
+  background-color:
+    rgba(10, 30, 50, 0.85);
+
+  border:
+    1px solid
+    rgba(135, 206, 235, 0.3);
+
+  border-radius: 8px;
+
+  backdrop-filter:
+    blur(8px);
+}
+
+.tarjeta:hover {
+  border-color:
+    rgba(135, 206, 235, 0.5);
+}
+
+.tarjeta h3 {
+  margin-bottom: 10px;
+
+  color: #87CEEB;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 1.5rem;
+
+  font-weight: 600;
+}
+
+.tarjeta p {
+  color: #ffffff;
+
+  font-size: 0.95rem;
+
+  line-height: 1.7;
+}
+
+
+/* =========================
+   NOSOTROS
+========================= */
+
+#equipo-container {
+  width: 100%;
+  max-width: 900px;
+
+  margin:
+    0 auto 30px auto;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, 1fr);
+
+  gap: 14px;
+
+  align-items: stretch;
+}
+
+.integrante-card {
+  width: 100%;
+
+  padding: 0;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+
+  background-color:
+    rgba(10, 30, 50, 0.88);
+
+  border:
+    1px solid
+    rgba(135, 206, 235, 0.4);
+
+  border-radius: 7px;
+}
+
+.integrante-foto {
+  width: 100%;
+
+  height: 190px;
+
+  display: block;
+
+  object-fit: cover;
+
+  margin: 0;
+}
+
+.integrante-info {
+  padding: 12px 14px;
+
+  text-align: center;
+
+  flex: 1;
+}
+
+.integrante-info h3 {
+  margin-bottom: 3px;
+
+  color: #87CEEB;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 1.2rem;
+
+  line-height: 1.3;
+}
+
+.integrante-info h4 {
+  margin-bottom: 8px;
+
+  color: #ffffff;
+
+  font-size: 0.76rem;
+
+  font-weight: 600;
+
+  line-height: 1.4;
+}
+
+.integrante-info p {
+  margin: 0;
+
+  color: #ffffff;
+
+  font-size: 0.8rem;
+
+  line-height: 1.45;
+}
+
+
+/* =========================
+   SERVICIOS
+========================= */
+
+#catalogo-container {
+  width: 100%;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(3, minmax(0, 1fr));
+
+  gap: 25px;
+
+  align-items: stretch;
+}
+
+#catalogo-container .tarjeta {
+  width: 100%;
+
+  padding: 18px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  overflow: hidden;
+}
+
+
+/* =========================
+   IMAGEN PRODUCTO
+========================= */
+
+.producto-imagen {
+  width: 100%;
+}
+
+.producto-imagen img {
+  width: 100%;
+
+  height: 220px;
+
+  display: block;
+
+  object-fit: cover;
+
+  margin:
+    0 0 15px 0;
+
+  border-radius: 6px;
+}
+
+
+/* =========================
+   INFORMACIÓN PRODUCTO
+========================= */
+
+.producto-info {
+  width: 100%;
+
+  display: flex;
+
+  flex-direction: column;
+
+  flex: 1;
+}
+
+.producto-info h3 {
+  margin-bottom: 10px;
+
+  color: #87CEEB;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-size: 1.35rem;
+
+  line-height: 1.25;
+}
+
+.producto-info p {
+  margin-bottom: 8px;
+}
+
+.producto-info label {
+  margin-top: 4px;
+}
+
+.producto-acciones {
+  margin-top: 10px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 10px;
+
+  flex-wrap: wrap;
+}
+
+.producto-acciones input {
+  width: 65px;
+
+  padding: 9px;
+
+  background-color:
+    rgba(255, 255, 255, 0.95);
+
+  color: #0a1e32;
+
+  border:
+    1px solid #87CEEB;
+
+  border-radius: 4px;
+}
+
+.producto-acciones .btn-cta {
+  margin-top: 0;
+
+  padding: 9px 13px;
+
+  font-size: 0.65rem;
+
+  letter-spacing: 1px;
+}
+
+.mensaje-producto {
+  margin-top: 10px;
+
+  font-weight: bold;
+}
+
+
+/* =========================
+   RESERVAS DEL CLIENTE
+========================= */
+
+#resumen-reservas {
+  width: 100%;
+  max-width: 900px;
+
+  margin:
+    35px auto 0 auto;
+
+  text-align: center;
+}
+
+.lista-reservas-cliente {
+  width: 100%;
+
+  margin-top: 20px;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 12px;
+}
+
+.reserva-cliente {
+  width: 100%;
+
+  padding: 15px;
+
+  display: flex;
+
+  justify-content:
+    space-between;
+
+  align-items: center;
+
+  gap: 20px;
+
+  text-align: left;
+
+  background-color:
+    rgba(255, 255, 255, 0.06);
+
+  border:
+    1px solid
+    rgba(135, 206, 235, 0.3);
+
+  border-radius: 6px;
+}
+
+.reserva-cliente-info {
+  flex: 1;
+}
+
+.reserva-cliente-info h4 {
+  margin-bottom: 5px;
+
+  color: #87CEEB;
+
+  font-size: 1.05rem;
+}
+
+.reserva-cliente-info p {
+  margin: 2px 0;
+
+  color: #ffffff;
+}
+
+.codigo-reserva {
+  color:
+    #87CEEB !important;
+
+  font-size: 0.82rem !important;
+}
+
+.estado-pendiente {
+  color:
+    #FFD700 !important;
+
+  font-weight: bold;
+}
+
+.texto-reservas {
+  margin-bottom: 10px;
+}
+
+.btn-cancelar-reserva-cliente {
+  padding: 10px 15px;
+
+  background-color:
+    rgba(10, 30, 50, 0.9);
+
+  color: #ffffff;
+
+  border:
+    1px solid #ff4d4d;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  cursor: pointer;
+
+  white-space: nowrap;
+
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.btn-cancelar-reserva-cliente:hover {
+  background-color:
+    #ff4d4d;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   CONTACTO
+========================= */
+
+#seccion-contacto h2,
+#seccion-login h2,
+#panel-admin h2 {
+  color:
+    #0a1e32 !important;
+
+  font-family:
+    "Playfair Display",
+    serif;
+
+  font-weight: 700;
+
+  text-align: center;
+}
+
+#contacto-form {
+  width: 100%;
+  max-width: 500px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+}
+
+#contacto-form input,
+#contacto-form textarea {
+  width: 100%;
+
+  padding: 12px;
+
+  color: #0a1e32;
+
+  background-color:
+    rgba(255, 255, 255, 0.95);
+
+  border:
+    1px solid #87CEEB;
+
+  border-radius: 4px;
+
+  font-family: inherit;
+}
+
+#contacto-form textarea {
+  resize: vertical;
+}
+
+
+/* =========================
+   LOGIN
+========================= */
+
+#seccion-login {
+  width: 100%;
+
+  margin-top: 45px;
+
+  padding:
+    10px 0 30px 0;
+
+  border: none;
+
+  background: transparent;
+
+  box-shadow: none;
+}
+
+#login-form {
+  width: 100%;
+  max-width: 400px;
+
+  margin: 0 auto;
+
+  display: flex;
+
+  flex-direction: column;
+
+  gap: 15px;
+
+  border: none;
+
+  background: transparent;
+
+  box-shadow: none;
+}
+
+#login-form input {
+  width: 100%;
+
+  padding: 12px;
+
+  color: #0a1e32;
+
+  background-color:
+    rgba(255, 255, 255, 0.95);
+
+  border:
+    1px solid
+    rgba(255, 255, 255, 0.5);
+
+  border-radius: 4px;
+}
+
+
+/* =========================
+   PANEL ADMIN
+========================= */
+
+#panel-admin {
+  width: 100%;
+  max-width: 1200px;
+
+  margin: 30px auto;
+}
+
+.texto-centro {
+  margin-bottom: 25px;
+
+  text-align: center;
+}
+
+.acciones-admin {
+  margin-top: 25px;
+
+  text-align: center;
+}
+
+.resumen-admin {
+  margin: 20px 0;
+
+  display: grid;
+
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(140px, 1fr)
+    );
+
+  gap: 15px;
+}
+
+.resumen-admin > div {
+  padding: 12px;
+
+  text-align: center;
+
+  background-color:
+    rgba(255, 255, 255, 0.05);
+
+  border-radius: 5px;
+}
+
+.resumen-admin p {
+  margin-top: 4px;
+
+  font-size: 1.1rem;
+
+  font-weight: bold;
+}
+
+.tabla-responsive {
+  width: 100%;
+
+  overflow-x: auto;
+}
+
+#panel-admin table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+#panel-admin th {
+  color: #87CEEB;
+
+  border-bottom:
+    1px solid
+    rgba(135, 206, 235, 0.5);
+}
+
+#panel-admin th,
+#panel-admin td {
+  padding: 10px;
+
+  text-align: left;
+
+  vertical-align: middle;
+}
+
+#panel-admin tbody tr {
+  border-bottom:
+    1px solid
+    rgba(255, 255, 255, 0.08);
+}
+
+.estado-admin {
+  min-width: 130px;
+}
+
+.estado-pendiente-admin {
+  color: #FFD700;
+}
+
+.botones-estado {
+  margin-top: 7px;
+
+  display: flex;
+
+  flex-wrap: wrap;
+
+  gap: 5px;
+}
+
+.btn-completar,
+.btn-cancelar {
+  padding: 7px 10px;
+
+  border:
+    1px solid #87CEEB;
+
+  background-color:
+    rgba(10, 30, 50, 0.9);
+
+  color: #ffffff;
+
+  font-family: inherit;
+
+  font-size: 0.72rem;
+
+  cursor: pointer;
+
+  border-radius: 4px;
+}
+
+.btn-completar:hover {
+  background-color:
+    #87CEEB;
+
+  color: #0a1e32;
+}
+
+.btn-cancelar {
+  border-color: #ff4d4d;
+}
+
+.btn-cancelar:hover {
+  background-color:
+    #ff4d4d;
+
+  color: #ffffff;
+}
+
+
+/* =========================
+   NOTIFICACIÓN RESERVA
+========================= */
+
+#notificacion-reserva-cliente {
+  position: fixed;
+
+  top: 25px;
+  left: 50%;
+
+  transform:
+    translateX(-50%);
+
+  width:
+    calc(100% - 40px);
+
+  max-width: 680px;
+
+  z-index: 9999;
+
+  animation:
+    aparecerNotificacion
+    0.4s ease;
+}
+
+.notificacion-reserva-contenido {
+  padding: 20px;
+
+  display: flex;
+
+  align-items: center;
+
+  gap: 18px;
+
+  background-color:
+    rgba(10, 30, 50, 0.98);
+
+  border:
+    2px solid #32CD32;
+
+  border-radius: 10px;
+
+  box-shadow:
+    0 10px 35px
+    rgba(0, 0, 0, 0.35);
+}
+
+.notificacion-icono {
+  width: 55px;
+  height: 55px;
+
+  display: flex;
+
+  justify-content: center;
+  align-items: center;
+
+  flex-shrink: 0;
+
+  background-color: #32CD32;
+
+  color: #ffffff;
+
+  border-radius: 50%;
+
+  font-size: 2rem;
+
+  font-weight: bold;
+}
+
+.notificacion-texto {
+  flex: 1;
+}
+
+.notificacion-texto h3 {
+  margin-bottom: 5px;
+
+  color: #32CD32;
+
+  font-family:
+    "Playfair Display",
+    serif;
+}
+
+.notificacion-texto p {
+  color: #ffffff;
+}
+
+.notificacion-codigo {
+  margin-top: 4px;
+
+  color:
+    #87CEEB !important;
+
+  font-size:
+    0.85rem !important;
+}
+
+#cerrar-notificacion-reserva {
+  padding: 10px 15px;
+
+  background-color:
+    transparent;
+
+  color: #ffffff;
+
+  border:
+    1px solid #32CD32;
+
+  border-radius: 5px;
+
+  font-family: inherit;
+
+  font-weight: bold;
+
+  cursor: pointer;
+}
+
+#cerrar-notificacion-reserva:hover {
+  background-color:
+    #32CD32;
+
+  color: #0a1e32;
+}
+
+@keyframes aparecerNotificacion {
+
+  from {
+    opacity: 0;
+
+    transform:
+      translate(-50%, -25px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform:
+      translate(-50%, 0);
+  }
+}
+
+
+/* =========================
+   FINANZAS
+========================= */
+
+#calc-form input {
+  width: 100%;
+
+  padding: 11px;
+
+  background-color:
+    rgba(255, 255, 255, 0.95);
+
+  color: #0a1e32;
+
+  border:
+    1px solid #87CEEB;
+
+  border-radius: 4px;
+}
+
+#calc-form label {
+  color: #ffffff;
+}
+
+#resultado-total {
+  margin-top: 10px;
+}
+
+#advertencia-ads {
+  margin-top: 15px;
+}
+
+.advertencia-ads {
+  padding: 12px;
+
+  border-radius: 6px;
+}
+
+.advertencia-ads.alta {
+  background-color:
+    #FFD700;
+
+  color: #000000;
+
+  font-weight: bold;
+}
+
+.advertencia-ads.normal {
+  background-color:
+    transparent;
+
+  color: #87CEEB;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+  width: 100%;
+
+  margin:
+    0 !important;
+
+  padding:
+    0 !important;
+
+  background-color:
+    rgba(10, 30, 50, 0.95);
+
+  border-top:
+    1px solid
+    rgba(135, 206, 235, 0.5);
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-size: 0.8rem;
+
+  font-weight: 600;
+
+  letter-spacing: 2px;
+}
+
+footer p {
+  margin:
+    0 !important;
+
+  padding:
+    12px 0 !important;
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 950px) {
+
+  header {
+    padding: 15px;
+
+    flex-direction: column;
+
+    align-items: center;
+
+    gap: 15px;
+  }
+
+  h1 {
+    text-align: center;
+
+    font-size: 1.3rem;
+
+    letter-spacing: 3px;
+  }
+
+  nav {
+    justify-content: center;
+  }
+
+  nav ul {
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 18px;
+  }
+
+  #barra-estado {
+    position: static;
+
+    order: 3;
+
+    width: 100%;
+
+    text-align: center;
+  }
+
+  #catalogo-container {
+    grid-template-columns:
+      repeat(2, minmax(0, 1fr));
+  }
+
+  #equipo-container {
+    max-width: 620px;
+
+    grid-template-columns:
+      repeat(2, 1fr);
+
+    gap: 14px;
+  }
+
+  .integrante-foto {
+    height: 185px;
+  }
+}
+
+
+/* =========================
+   MÓVIL
+========================= */
+
+@media (max-width: 600px) {
+
+  main {
+    margin-top: 25px;
+
+    padding: 0 4%;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .hero {
+    padding:
+      40px 0 60px 0;
+  }
+
+  .hero h2 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn-cta {
+    width: 100%;
+
+    display: block;
+
+    text-align: center;
+  }
+
+  #catalogo-container {
+    grid-template-columns:
+      1fr;
+  }
+
+  .producto-imagen img {
+    height: 250px;
+  }
+
+  .producto-acciones .btn-cta {
+    width: auto;
+
+    display: inline-block;
+  }
+
+  #equipo-container {
+    max-width: 300px;
+
+    grid-template-columns:
+      1fr;
+
+    gap: 14px;
+  }
+
+  .integrante-foto {
+    height: 190px;
+  }
+
+  .integrante-info {
+    padding: 11px 12px;
+  }
+
+  .integrante-info h3 {
+    font-size: 1.15rem;
+  }
+
+  .integrante-info h4 {
+    font-size: 0.74rem;
+  }
+
+  .integrante-info p {
+    font-size: 0.78rem;
+  }
+
+  .reserva-cliente {
+    flex-direction: column;
+
+    align-items: stretch;
+
+    text-align: center;
+  }
+
+  .btn-cancelar-reserva-cliente {
+    width: 100%;
+  }
+
+  #panel-admin {
+    overflow-x: auto;
+  }
+
+  .botones-estado {
+    flex-direction: column;
+  }
+
+  .btn-completar,
+  .btn-cancelar {
+    width: 100%;
+  }
+
+  .notificacion-reserva-contenido {
+    flex-direction: column;
+
+    text-align: center;
+  }
+
+  #cerrar-notificacion-reserva {
+    width: 100%;
+  }
+
+}
