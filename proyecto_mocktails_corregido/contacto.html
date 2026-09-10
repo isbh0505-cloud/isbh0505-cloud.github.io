@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contacto - Bar Gourmet Mocktails</title>
+
+  <meta name="author" content="Isabella Bastidas">
+
+  <meta
+    name="description"
+    content="Contacto y acceso administrativo de Bar Gourmet Mocktails."
+  >
+
+  <meta
+    name="keywords"
+    content="contacto mocktails santiago, bar gourmet mocktails, mocktails providencia, coctelería sin alcohol"
+  >
+
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <header>
+
+    <div id="barra-estado"></div>
+
+    <h1>Bar Gourmet Mocktails</h1>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+        <li><a href="finanzas.html">Finanzas</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main>
+
+
+    <section id="seccion-contacto">
+
+      <h2
+        style="
+          text-align:center;
+          color:white;
+          font-size:2.5rem;
+          margin-bottom:10px;
+        "
+      >
+        Contáctanos
+      </h2>
+
+
+      <p
+        style="
+          text-align:center;
+          color:white;
+          font-weight:600;
+          font-size:1.1rem;
+          max-width:700px;
+          margin:0 auto 35px auto;
+        "
+      >
+        Estamos aquí para ayudarte.
+        Escríbenos o visítanos en nuestra ubicación.
+      </p>
+
+
+      <div
+        style="
+          display:grid;
+          grid-template-columns:repeat(auto-fit, minmax(320px, 1fr));
+          gap:30px;
+          max-width:1050px;
+          margin:0 auto;
+          align-items:start;
+        "
+      >
+
+
+        <article
+          class="tarjeta"
+          style="padding:25px;"
+        >
+
+          <h3
+            style="
+              color:#87CEEB;
+              margin-bottom:20px;
+            "
+          >
+            Información de contacto
+          </h3>
+
+
+          <div style="margin-bottom:18px;">
+            <strong>Dirección</strong>
+
+            <p>
+              Costanera Center,<br>
+              Av. Andrés Bello 2425,<br>
+              Providencia, Santiago de Chile.
+            </p>
+          </div>
+
+
+          <div style="margin-bottom:18px;">
+            <strong>Teléfono</strong>
+            <p>223453300</p>
+          </div>
+
+
+          <div style="margin-bottom:18px;">
+            <strong>Correo</strong>
+            <p>contacto@mocktails.cl</p>
+          </div>
+
+
+          <div style="margin-bottom:25px;">
+            <strong>Horario</strong>
+
+            <p>
+              Lunes a domingo<br>
+              12:00 a 22:00 hrs.
+            </p>
+          </div>
+
+
+          <h3
+            style="
+              color:#87CEEB;
+              margin-bottom:15px;
+            "
+          >
+            Nuestra ubicación
+          </h3>
+
+
+          <img
+            src="img/mapa-costanera.png"
+            alt="Mapa de Bar Gourmet Mocktails"
+            style="
+              width:100%;
+              display:block;
+              border-radius:8px;
+            "
+          >
+
+
+          <p
+            style="
+              margin-top:12px;
+              text-align:center;
+              font-weight:600;
+            "
+          >
+            Costanera Center · Av. Andrés Bello 2425, Providencia
+          </p>
+
+        </article>
+
+
+
+        <article
+          class="tarjeta"
+          style="padding:25px;"
+        >
+
+          <h3
+            style="
+              color:#87CEEB;
+              margin-bottom:10px;
+            "
+          >
+            Envíanos un mensaje
+          </h3>
+
+
+          <p style="margin-bottom:25px;">
+            Déjanos tus datos y cuéntanos
+            en qué podemos ayudarte.
+          </p>
+
+
+          <form
+            id="contacto-form"
+            style="
+              display:flex;
+              flex-direction:column;
+              gap:15px;
+            "
+          >
+
+            <label for="telefono">
+              <strong>Teléfono</strong>
+            </label>
+
+            <input
+              type="text"
+              id="telefono"
+              placeholder="Ej: 912345678"
+              style="
+                padding:12px;
+                border-radius:6px;
+              "
+            >
+
+
+            <label for="mensaje">
+              <strong>Mensaje</strong>
+            </label>
+
+            <textarea
+              id="mensaje"
+              rows="7"
+              placeholder="Escribe tu consulta aquí..."
+              style="
+                padding:12px;
+                border-radius:6px;
+                resize:vertical;
+              "
+            ></textarea>
+
+
+            <button
+              type="submit"
+              class="btn-cta"
+            >
+              Enviar Consulta
+            </button>
+
+
+            <div
+              id="error-msg"
+              style="min-height:22px;"
+            ></div>
+
+          </form>
+
+        </article>
+
+
+      </div>
+
+    </section>
+
+
+    <section style="text-align:center; margin:10px 0 45px 0;">
+      <a href="finanzas.html" class="btn-cta">
+        ¿Te gustaría una página como esta? Cotiza tu proyecto
+      </a>
+    </section>
+
+
+    <section
+      id="seccion-login"
+      style="
+        margin-top:55px;
+        padding-top:20px;
+      "
+    >
+
+      <div
+        style="
+          max-width:480px;
+          margin:0 auto;
+          padding:10px 20px;
+        "
+      >
+
+        <h2
+          style="
+            color:white;
+            text-align:center;
+            margin-bottom:10px;
+          "
+        >
+          Acceso Administrativo
+        </h2>
+
+
+        <p
+          style="
+            text-align:center;
+            margin-bottom:25px;
+          "
+        >
+          Ingresa para revisar y gestionar
+          las reservas de los clientes.
+        </p>
+
+
+        <form
+          id="login-form"
+          style="
+            display:flex;
+            flex-direction:column;
+            gap:15px;
+          "
+        >
+
+          <label for="user">
+            <strong>Usuario</strong>
+          </label>
+
+          <input
+            type="text"
+            id="user"
+            placeholder="Usuario"
+            style="
+              padding:12px;
+              border-radius:6px;
+            "
+          >
+
+
+          <label for="pass">
+            <strong>Contraseña</strong>
+          </label>
+
+          <input
+            type="password"
+            id="pass"
+            placeholder="Contraseña"
+            style="
+              padding:12px;
+              border-radius:6px;
+            "
+          >
+
+
+          <button
+            type="submit"
+            class="btn-cta"
+          >
+            Iniciar Sesión
+          </button>
+
+
+          <div
+            id="error-login"
+            style="min-height:22px;"
+          ></div>
+
+        </form>
+
+      </div>
+
+    </section>
+
+
+    <section
+      id="panel-admin"
+      style="
+        display:none;
+        max-width:1200px;
+        margin:40px auto;
+      "
+    ></section>
+
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2026 Sofia's. Todos los derechos reservados.</p>
+  </footer>
+
+
+  <script src="js/scripts.js"></script>
+
+</body>
+</html>
